@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- style -->
+
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header class="text-center">
+      <img src="images/logo.svg" alt="Logo" class="img-fluid m-5" />
+    </header>
+    <main class="container-fluid">
+      <div class="row spliter-cardContainer">
+        <div class="col-md-6 part-1">
+          <form class="form-split">
+            <div class="Bill">
+              <label for="bill">Bill</label>
+              <div class="input mt-2 d-flex position-relative">
+                <img src="images/icon-dollar.svg" alt="dollar" />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="bill"
+                  min="0"
+                  placeholder="0"
+                />
+              </div>
+            </div>
+            <div class="pt-4 select-tip">
+              <p>Select Tip %</p>
+              <div class="tipsInput row">
+                <div class="col-6 col-md-4">
+                  <div class="tip">5%</div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="tip">10%</div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="tip">15%</div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="tip">25%</div>
+                </div>
+                <div class="col-6 col-md-4"><div class="tip">50%</div></div>
+                <div class="col-6 col-md-4 bg-transparent">
+                  <input
+                    type="number"
+                    placeholder="custom"
+                    class="form-control"
+                    id="custom"
+                    min="0"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="Number-people my-3">
+              <label class="mb-2" for="people">Number of People</label>
+              <span class="people-error">Can't be zero...</span>
+              <div class="input d-flex position-relative">
+                <img src="images/icon-person.svg" alt="person" />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="people"
+                  placeholder="0"
+                  min="0"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 part-2">
+          <div class="bg-green">
+            <div class="tip-amount my-4 d-flex px-3">
+              <div class="w-50 d-flex align-items-center">
+                <p>
+                  Tip Amount
+                  <br />
+                  <span>/person</span>
+                </p>
+              </div>
+              <div
+                class="w-50 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/icon-dollarAmount.svg" alt="dollar" />
+                <h1 id="amount">0.00</h1>
+              </div>
+            </div>
+
+            <div class="tip-total mt-2 mb-5 d-flex px-3">
+              <div class="w-50 d-flex align-items-center">
+                <p>
+                  Total
+                  <br />
+                  <span>/person</span>
+                </p>
+              </div>
+              <div
+                class="w-50 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/icon-dollarAmount.svg" alt="dollar" />
+                <h1 id="total">0.00</h1>
+              </div>
+            </div>
+            <div class="reset">
+              <button id="reset" class="btn">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- script bootstrap cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- srcipt -->
+    <script src="script/index.js"></script>
+  </body>
+</html>

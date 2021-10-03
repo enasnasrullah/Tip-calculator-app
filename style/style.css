@@ -1,0 +1,125 @@
+body {
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185, 41%, 84%);
+}
+main {
+  max-width: 850px;
+  width: 100%;
+}
+.form-control {
+  font-size: 24px;
+  padding: 0 10px;
+  background-color: hsl(189, 41%, 97%);
+}
+.form-control:focus {
+  border-color: hsl(172, 67%, 45%);
+  box-shadow: 0 0 0 0.2rem hsl(172, 67%, 45%);
+}
+.spliter-cardContainer {
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 20px;
+}
+label {
+  color: hsl(186, 14%, 43%);
+}
+input {
+  text-align: right;
+}
+
+.input img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.tipsInput > div {
+  padding: 5px 7px;
+}
+.tip {
+  background: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  text-align: center;
+  padding: 7px 0px;
+  transition: all 0.4s;
+  font-size: 24px;
+  font-weight: 700;
+}
+.tip:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(184, 14%, 56%);
+}
+#custom {
+  padding: 7px 0;
+  text-align: center;
+}
+.bg-green {
+  background: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  padding: 10px;
+  margin-left: 10px;
+}
+.tip-amount h1,
+.tip-total h1 {
+  color: hsl(172, 67%, 45%);
+}
+.tip-amount img,
+.tip-total img {
+  width: 25px;
+}
+.tip-amount span,
+.tip-total span {
+  color: hsl(186, 14%, 43%);
+}
+.reset button {
+  width: 100%;
+  font-size: 24px;
+  background-color: hsl(172, 67%, 45%);
+  margin-top: 37px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+}
+.reset button:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+.btn:focus {
+  box-shadow: none;
+}
+.active {
+  background-color: #00a3a3;
+  color: black;
+}
+.people-error {
+  color: red;
+  font-size: 12px;
+  opacity: 0;
+}
+.show-people-error {
+  opacity: 1;
+  transition: opacity 1s;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-green {
+    margin-left: 0;
+  }
+  .part-2 {
+    padding: 0;
+  }
+  .tip-total {
+    margin-bottom: 0 !important;
+  }
+  .reset button {
+    margin-top: 17px;
+  }
+}
